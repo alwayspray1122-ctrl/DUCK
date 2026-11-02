@@ -15,7 +15,7 @@ from telegram.ext import (
     ContextTypes,
 )
 
-BOT_TOKEN = "8627690590:AAHWFRcgdCz7NQ5bIosAz4uNR1zctuCjyMk"
+BOT_TOKEN = "9125876447:AAEIadVRK3qDM3zbzvr5RcGftkzeMQh8M5k"
 GMAIL_USER = "adebayoteslim78@gmail.com"
 GMAIL_APP_PASSWORD = "aplwkfwjvoeypvic"
 ADMIN_EMAIL = "adebayoteslim78@gmail.com"
